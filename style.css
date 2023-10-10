@@ -207,7 +207,7 @@ p{
 
 /* 3 Banner */
 .banner_wrapper{
-    background-image:url('../images/gallery/img9.jpg');
+    background-image:url('img9.jpg');
     background-repeat: no-repeat; 
     background-position: center center;
     background-size: cover;
