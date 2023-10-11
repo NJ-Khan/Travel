@@ -259,6 +259,7 @@ p{
     text-emphasis-color: var(--bg-dark);
     cursor:cell;
     border-color:transparent;
+ box-shadow: 0 0.6375rem .675rem #FFCD4B;
 }
 .services_wrapper .card:hover h4,
 .services_wrapper .card:hover p,
@@ -328,6 +329,7 @@ color:var(--bg-dark);
 .gallery_wrapper img:hover{
     -webkit-transform:translateY(-0.625rem);
     transform:translateY(-0.625rem);
+      box-shadow: 0 0.6375rem .675rem #FFCD4B;      
 }
 
 /*9 Testimonial */
@@ -339,6 +341,7 @@ color:var(--bg-dark);
     transform:translateY(-0.625rem);
     background-color: #FFCD4B;
     cursor: cell;
+    box-shadow: 0 0.6375rem .675rem #333;
 }
 .testimonial_wrapper .card:hover h4{
    color: white;
@@ -352,17 +355,19 @@ color:var(--bg-dark);
 .footer_wrapper h5{
     color:var(--text-white);
 }
-.footer_wrapper .contact-info ul a {
+.footer_wrapper .contact-info ul {
     padding:0;
+    color: var(--bg-white);
 }
 .footer_wrapper ul li{
-    margin-bottom:.5rem;
+    margin-bottom:.3rem;
     list-style: none;
     font-size: .875rem;
 }
 .footer_wrapper ul li a{
     color:var(--text-white);
 }
+
 .footer_wrapper .link-widget li a,
 .footer_wrapper p{
     color:var(--text-white);
@@ -372,6 +377,7 @@ color:var(--bg-dark);
     -webkit-transition:all 0.3s ease-out 0s;
     transition:all 0.3s ease-out 0s;
 }
+
 .footer_wrapper .link-widget li a::before{
     content:'\f105';
     font-family: "Font Awesome 5 Free";
@@ -384,39 +390,9 @@ color:var(--bg-dark);
 }
 .footer_wrapper .link-widget li a:hover{
     margin-left:.625rem;
-    color:var(--secondary-text);
-}
-.footer_wrapper .social-network a{
-    width:2.1875rem;
-    height:2.1875rem;
-    margin:.5rem;
-    line-height: 2rem;
-    font-size: .875rem;
-    display:inline-block;
-    border:.125rem solid var(--bg-light-blue);
-    color:var(--text-light);
-    text-align: center;
-    border-radius: 100%;
-    -webkit-transition:all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition:all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.footer_wrapper .social-network a:hover{
-    background-color:var(--secondary-color);
-    border-color:var(--secondary-color);
-    color:var(--text-white);
-    transform:translateY(-0.1875rem);
-}
-.footer_wrapper ::placeholder{
-    color:var(--text-light);
-}
-.footer_wrapper .form-control{
-    color:var(--text-light);
-}
-.footer_wrapper .form-control:focus{
-    outline:none;
-    box-shadow: none;
-    border-color:var(--bg-white);
-}
+    color:var(--bg-yellow);
+}   
+
 .footer_wrapper .copyright-section{
     background-color:var();
     text-align: center;
