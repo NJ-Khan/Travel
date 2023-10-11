@@ -288,6 +288,8 @@ color:var(--bg-dark);
     transform:translateY(-0.625rem);
     background-color: #FFCD4B;
     cursor: cell;
+               box-shadow: 0 0.6375rem .675rem #333;
+
     
 }
 .team_wrapper .team-img{
