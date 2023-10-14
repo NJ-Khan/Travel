@@ -206,7 +206,7 @@ p{
 
 /* 3 Banner */
 .banner_wrapper{
-    background-image:url('../images/gallery/img9.jpg');
+    background-image:url('img9.jpg');
     background-repeat: no-repeat; 
     background-position: center center;
     background-size: cover;
@@ -224,7 +224,7 @@ p{
 }
 .bannner_wrapper
 {
-    background-image:url('../images/gallery/visabanner3.jpg');
+    background-image:url('visabanner3.jpg');
     background-repeat: no-repeat; 
     background-position: center center;
     background-size: cover;
@@ -232,7 +232,7 @@ p{
 }
 .bannnner_wrapper
 {
-    background-image:url('../images/gallery/flighttickets.jpg');
+    background-image:url('flighttickets.jpg');
     background-repeat: no-repeat; 
     background-position: center center;
     background-size: cover;
