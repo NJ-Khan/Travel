@@ -26,7 +26,6 @@
     /* Background Color */
     --primary-color :#333;
     --secondary-color: #252B48;
-    --bg-light-blue: #3672bc;
     --bg-dark: #666;
     --bg-white: #fff;
     --bg-yellow: #FFCD4B;
@@ -34,7 +33,7 @@
     /* Text Style */
     --primary-font: 'Roboto Slab', serif;
     --secondary-font: 'Josefin Sans', sans-serif;
-    --primary-text: #004caa;
+
     --secondary-text: #fc5185;
     --text-white: #fff;
     --text-black: #222;
@@ -184,7 +183,7 @@ p{
 }
 .header_wrapper .nav-item .nav-link{
     font-size: 1.125rem;
-    font-weight: 400;
+    font-weight: 500;
     color:var(--primary-color);
     display:inline-block;
     font-family: var(--secondary-font);
@@ -207,18 +206,46 @@ p{
 
 /* 3 Banner */
 .banner_wrapper{
-    background-image:url('img9.jpg');
+    background-image:url('../images/gallery/img9.jpg');
     background-repeat: no-repeat; 
     background-position: center center;
     background-size: cover;
-    height: 33rem;
+    height: 35rem;
 }
 .banner_wrapper p{
     max-width: 80%;
     color:var(--text-white);
 }
+.container .card{
+    margin:1rem;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 0.6375rem .675rem #333;
+}
+.bannner_wrapper
+{
+    background-image:url('../images/gallery/visabanner3.jpg');
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-size: cover;
+    height: 35rem;
+}
+.bannnner_wrapper
+{
+    background-image:url('../images/gallery/flighttickets.jpg');
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-size: cover;
+    height: 35rem;
+}
+
 /* 4 About WElcome to family */
 
+.about_wrapper .img-fluid
+{
+    border-radius: 1rem;
+    box-shadow: 0 0.1375rem .175rem #FFCD4B;
+}
 .about_wrapper .single-progress {
     margin-top: 40px;
     position: relative;
@@ -248,6 +275,7 @@ p{
 .services_wrapper {
     background-color:var(--primary-color);
 }
+
 .services_wrapper .card{
     background-color:transparent;
     border:.0625rem solid var(--bg-yellow);
@@ -259,7 +287,7 @@ p{
     text-emphasis-color: var(--bg-dark);
     cursor:cell;
     border-color:transparent;
- box-shadow: 0 0.6375rem .675rem #FFCD4B;
+    box-shadow: 0 0.6375rem .675rem #FFCD4B;
 }
 .services_wrapper .card:hover h4,
 .services_wrapper .card:hover p,
@@ -288,8 +316,7 @@ color:var(--bg-dark);
     transform:translateY(-0.625rem);
     background-color: #FFCD4B;
     cursor: cell;
-               box-shadow: 0 0.6375rem .675rem #333;
-
+    box-shadow: 0 0.6375rem .675rem #333;
     
 }
 .team_wrapper .team-img{
@@ -330,26 +357,161 @@ color:var(--bg-dark);
 }
 .gallery_wrapper img:hover{
     -webkit-transform:translateY(-0.625rem);
+    /* -webkit-transition:all 0.4s ease; */
     transform:translateY(-0.625rem);
-      box-shadow: 0 0.6375rem .675rem #FFCD4B;      
+    box-shadow: 0 0.6375rem .675rem hsl(43, 100%, 65%);
+
+
 }
 
 /*9 Testimonial */
-.testimonial_wrapper .card{
-    background-color:rgba(5, 5, 5, 0.11);
-}  
 .testimonial_wrapper .card:hover{
     -webkit-transform:translateY(-0.625rem);
     transform:translateY(-0.625rem);
-    background-color: #FFCD4B;
     cursor: cell;
-    box-shadow: 0 0.6375rem .675rem #333;
+    box-shadow: 0 0.9375rem 1.975rem #1d1d1d;
+    background-color: var(--bg-yellow);
 }
-.testimonial_wrapper .card:hover h4{
-   color: white;
-} 
+.testimonial_wrapper .card{
+    padding: 0;
+}
+.testimonial_wrapper .dubaidesign{
+background-color: #f8f8f8;
+}
+.testimonial_wrapper .pakdesign{
+    background-color: #fffbef;
+    }
+.testimonial_wrapper .visa:hover{
+    -webkit-transform:translateY(-0.625rem);
+    transform:translateY(-0.625rem);
+    cursor: cell;
+    box-shadow: 0 0.9375rem 1.975rem #1d1d1d;
+}
+/* Testimonial visa Ends*/
 
-/* 11 footer */
+
+
+/* Flight Tickets Starts Swiper ------------------------------------Flight HTML---------------------------------------- */
+.swiper_wrapper{
+    padding: 6rem;
+}
+.slide-container{
+    max-width: px;
+    width: 100%;
+    padding: 40px 0;
+}
+.slide-content{
+    margin: 0 5rem;
+    overflow: hidden; 
+    border-radius: 2rem;
+    
+}
+.swiper_wrapper .card{
+    border-radius: 2rem;
+    background-color: var(--primary-color);
+    padding: 0;
+ }
+ .image-content,
+ .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+ }
+ .image-content{
+    position: relative;
+    row-gap: 1rem;
+    padding: 2rem 0;
+ }
+ .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#fcf9f9;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #fcf9f9;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: var(--primary-color);
+}
+.card-image{
+    position:relative;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    padding: .256rem;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: .125rem solid var(--bg-yellow);
+}
+.name{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--bg-white);
+}
+.description{
+    font-size: 0.956rem;
+    color: #fff;
+    text-align: center;
+    /* margin: 1rem; */
+}
+.button{
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: .5rem 1rem;
+    background-color: #666;
+    border-radius: 1rem;
+    margin: 1rem;
+    cursor: pointer; 
+    transition: all 0.3s ease;
+}
+.button:hover{
+background-color: var(--bg-yellow);
+}
+.swiper-navBtn{
+    transition: color 0.3s ease;
+    --swiper-theme-color: black;
+}
+.swiper-navBtn:hover{
+    color: var(--bg-yellow);
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 1rem ;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-pagination-bullet{
+    --swiper-theme-color:var(--bg-yellow);
+}
+.swiper-pagination-bullet-active{
+    --swiper-theme-color:var(--bg-yellow);
+}
+
+/* Flight Tickets ends*/
+/* 11 footer --------------------------------------------Footer For all--------------------------------------------*/
 .footer_wrapper{
     background-color:var(--primary-color);
     padding-bottom:0;
@@ -368,6 +530,10 @@ color:var(--bg-dark);
 }
 .footer_wrapper ul li a{
     color:var(--text-white);
+}
+.footer_wrapper .img-fluid{
+    border-radius: 1rem;
+    box-shadow: 0 0.1375rem .175rem #ffffff;
 }
 
 .footer_wrapper .link-widget li a,
@@ -396,7 +562,8 @@ color:var(--bg-dark);
 }   
 
 .footer_wrapper .copyright-section{
-    background-color:var();
+    /* background-color:var(--bg-yellow); */
+    margin-top: 1.5rem;
     text-align: center;
 }
 .footer_wrapper .copyright-section a{
@@ -406,3 +573,32 @@ color:var(--bg-dark);
 
 
       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
