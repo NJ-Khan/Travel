@@ -132,11 +132,11 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
 
     /*Flight Html card slider*/
     .swiper_wrapper {
-        padding: 0.2rem;
+        padding: 1rem;
     }
     /* Services */ 
     .services_wrapper .icon-box{
